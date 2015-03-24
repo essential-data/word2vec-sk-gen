@@ -1,0 +1,38 @@
+diff -urN orig/compute-accuracy.c new/compute-accuracy.c
+--- orig/compute-accuracy.c	2015-02-24 13:05:43.000000000 +0100
++++ new/compute-accuracy.c	2015-02-24 13:05:57.000000000 +0100
+@@ -16,7 +16,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <math.h>
+-#include <malloc.h>
++#include <malloc/malloc.h>
+ #include <ctype.h>
+ 
+ const long long max_size = 2000;         // max length of strings
+diff -urN orig/distance.c new/distance.c
+--- orig/distance.c	2015-02-24 13:05:01.000000000 +0100
++++ new/distance.c	2015-02-24 13:04:57.000000000 +0100
+@@ -15,7 +15,8 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <math.h>
+-#include <malloc.h>
++#include <malloc/malloc.h>
++#include <stdlib.h>
+ 
+ const long long max_size = 2000;         // max length of strings
+ const long long N = 40;                  // number of closest words that will be shown
+diff -urN orig/word-analogy.c new/word-analogy.c
+--- orig/word-analogy.c	2015-02-24 13:05:23.000000000 +0100
++++ new/word-analogy.c	2015-02-24 13:06:03.000000000 +0100
+@@ -15,7 +15,8 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <math.h>
+-#include <malloc.h>
++#include <malloc/malloc.h>
++#include <stdlib.h>
+ 
+ const long long max_size = 2000;         // max length of strings
+ const long long N = 40;                  // number of closest words that will be shown
